@@ -15,7 +15,7 @@ Type the following command lines at your terminal to install Node dependencies:
 ```
 npm install http
 npm install querystring
-npm install utlis
+npm install utils
 npm install express
 ```
 
@@ -31,4 +31,13 @@ App is runing, server is listening on port 4500
 
 Login to RightJoin thru the API
 ===============================
-Another requeriment
+Type the following `curl` command to obtain your `access token`. All further data service request, require a valid `access token`:
+
+```
+curl -v -H "Content-Type: application/json"
+     -X POST
+     -d '{"user_email": "john@doe.com",
+          "password": "temp",
+          "call_back": "http://<YOUR-HOST-HERE>:<YOUR-PORT-HERE>/data"}'
+     https://api.rightjoin.io/rjclient/user
+```
