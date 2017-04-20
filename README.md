@@ -2,7 +2,7 @@
 
 Introduction
 ============
-Before you request data from RightJoin's API, you first need to have and EndPoint to use it as a call back function, in order to receive the record's as streams. You'll also need to login to obtain an [access token], that you will use to submit data service requests from RightJoin's API.
+Before you request data from RightJoin's API, you first need to have and EndPoint to use it as a call back function, in order to receive the records as streams. You'll also need to login to obtain an [access token], that you will use to submit data service requests from RightJoin's API.
 
 Following steps detail what you need in order to successfully call RightJoin's API. In our sample case [LeftJoin] is a [Customer] of RightJoin and with a valid registered user [john@doe.com], they wish to integrate an application to RightJoin's Data Services, in order to receive data streams in real time from their own Customer's records.
 
@@ -147,3 +147,4 @@ At your `server.js` console you should have received a response message similar 
 The `code` and `message` elements are the [HTTP code], standard for all responses.
 The `match` section indicates the ingested record received by RightJoin.
 The `results` section indicate the data elements returned from the data service. Data elements in this section will depend on the Customer's granted Data Sets as per the RightJoin's SLA.
+If succeed, you will receive one result for every ingested record.
