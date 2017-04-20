@@ -31,7 +31,7 @@ After this you will have a message in your terminal like this:
 App is runing, server is listening on port 4500
 ```
 
-Login to RightJoin thru the API
+Login to RightJoin with the API
 ===============================
 Type the following `curl` command at your terminal console, in order to obtain your `access token`. All further data service request, require a valid `access token`:
 
@@ -145,5 +145,5 @@ At your `server.js` console you should have received a response message similar 
 }
 ```
 The `code` and `message` elements are the [HTTP code], standard for all responses.
-The `match` section indicates the ingested record received.
+The `match` section indicates the ingested record received by RightJoin.
 The `results` section indicate the data elements returned from the data service. Data elements in this section will depend on the Customer's granted Data Sets as per the RightJoin's SLA.
