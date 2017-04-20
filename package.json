@@ -1,0 +1,10 @@
+{
+  "name" : "node",
+  "version" : "0.12.5",
+  "scripts" : {
+    "start" : "node ./server.js"
+  }, 
+  "engine" : {
+    "node" : "0.12.5"
+  }
+}
